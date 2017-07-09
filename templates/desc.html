@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<h1>Description:</h1>
+{% for i in desc %}
+
+<div>
+<p>{{i.description}}</p>
+<hr>
+<br>
+<br>
+<a href = '{{url_for('editItem',item_id=i.item_id,id=i.id)}}'>edit</a>
+</div>
+{% endfor %}
+
+</body>
+</html>
